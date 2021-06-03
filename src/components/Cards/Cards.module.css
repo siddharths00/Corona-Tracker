@@ -1,0 +1,30 @@
+.container {
+    margin: 50px 0;
+    /* margin of 50 pixels on top and bottom and 0 pixels on the right and left */
+}
+
+.card {
+    margin: 0 2% !important;
+    /* This important thing is marked since material ui may just subvert our style of the card and include its own   */
+    /* So we need to tell css never to overwrite this particular property by flagging it as very important */
+    /* This is mostly important when you're not using inline styles */
+}
+
+.infected {
+    border-bottom: 10px solid rgba(255, 255, 0, 1);
+}
+
+.recovered {
+    border-bottom: 10px solid rgba(0, 255, 0, 1);
+}
+
+.deaths {
+    border-bottom: 10px solid rgba(255, 0, 0, 1);
+} 
+
+@media (max-width: 770px)
+{
+    .card {
+        margin: 2% 0 !important;
+    }
+}
